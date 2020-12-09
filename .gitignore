@@ -130,3 +130,7 @@ dmypy.json
 
 .vscode
 .env
+
+.replit
+poetry.lock
+pyproject.toml
