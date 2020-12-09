@@ -37,7 +37,4 @@ class Visit(models.Model):
 
     def is_visit_long(self, minutes=60):
         threshold = django.utils.timezone.timedelta(minutes=minutes)
-        if self.get_duration() > threshold:
-            return True
-
-        return False
+        return self.get_duration() > threshold
