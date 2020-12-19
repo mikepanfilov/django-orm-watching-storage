@@ -1,5 +1,7 @@
 # Django ORM watching storage
 
+It is internal repository for 'Shining' bank stuff. If you got here by accident you is not able to lauch it because you have not enough DataBase permissions. But you can freely use this code or can look how DB requests are realized.
+
 This script manipulates with visits data. Control center for security purposes.
 
 ### How to install
@@ -17,10 +19,21 @@ pip install -r requirements.txt
 
 Don't forget to activate virtual environment and install all dependecies.
 
+Also you should make .env file and put folowings into it:
+```
+DB_ENGINE=django.db.backends.<desired_engine>
+DB_HOST=<hostname or IP>
+DB_PORT=<port number>
+DB_NAME=<database name>
+DB_USER=<database user name>
+DB_PASSWORD=<database user password>
+DJ_DEBUG=<debugging mode True or False>
+```
+
 Standard run:
 
 ```bash
-$ python main.py
+$ python manage.py runserver
 
   * Performing system checks...
 
